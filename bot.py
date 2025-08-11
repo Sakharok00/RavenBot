@@ -3,7 +3,8 @@ import aiosqlite
 from datetime import datetime
 from tenacity import retry, wait_exponential, stop_after_attempt
 from openai import OpenAI
-from telegram import Update, ChatAction
+from telegram import Update
+from telegram.constants import ChatAction
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # ==== ENV ====
